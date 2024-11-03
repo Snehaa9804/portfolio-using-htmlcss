@@ -1,0 +1,343 @@
+body {
+    background-color: #E4B1F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFE1FF;
+    padding: 40px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-wrap: nowrap;
+    z-index: 1;
+}
+.navbar > .right-container {
+    display: flex;
+    gap: 20px;
+}
+.navbar > .right-container > a {
+    text-decoration: none;
+}
+.navbar > .left-container > div {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#hero {
+    margin-top: 5%;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-container > .hero-left > button {
+    background-color: black;
+    color: white;
+    width: 500px;
+    height: 80px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.hero-container > .hero-left > a {
+    padding: 40px;
+}
+
+.hero-container > .item {
+    flex: 1;
+}
+
+.hero-container > .hero-left > #name {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.hero-container > .hero-left > #fed {
+    font-size: 40px;
+    margin-bottom: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hero-container > .hero-right > #am {
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.hero-container > .hero-right > #obj {
+    font-size: 40px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-container > .hero-right > button {
+    background-color: black;
+    color: white;
+    width: 500px;
+    height: 80px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#skills {
+    display: flex;
+    gap: 200px;
+    font-size: 40px;
+    text-align: left;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    width: 500px;
+    height: 80px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.project1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 calc(25% - 20px);
+    min-width: 250px;
+    max-width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    text-align: center;
+    padding: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contactme {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.form {
+    font-size: 30px;
+    font-weight: 100px;
+    text-align: left;
+}
+
+#foot {
+    float: inline-end;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .navbar .right-container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    #hero {
+        margin-top: 2%;
+        text-align: center;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .hero-left img {
+        height: 200px;
+    }
+
+    .hero-left #name {
+        font-size: 50px;
+    }
+
+    .hero-left #fed {
+        font-size: 25px;
+    }
+
+    #skills {
+        display: block;
+        gap: 10px;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #skills h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    #skills p {
+        font-size: 1rem;
+    }
+
+    .project1 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .project-container .row .card {
+        width: 100%;
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-container .card .btn-primary {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 16px;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .form {
+        padding: 15px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .form fieldset {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form legend {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .form label {
+        font-size: 1rem;
+        display: block;
+        margin: 10px 0 5px;
+    }
+
+    .form input[type="text"],
+    .form input[type="email"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .form input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .form input[type="submit"]:hover {
+        background-color: #555;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    button, .btn {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-left, .hero-right {
+        text-align: center;
+    }
+
+    #skills, #projects {
+        text-align: center;
+    }
+
+    .project1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #333;
+        color: white;
+        padding: 20px 10px;
+        width: 100%;
+        box-sizing: border-box;
+        position: static;
+        margin-top: 20px;
+        margin-bottom: 79px;
+    }
+
+    footer span {
+        display: block;
+        margin: 5px 0;
+        font-size: 1rem;
+    }
+
+    #foot {
+        font-size: 0.9rem;
+    }
+}
